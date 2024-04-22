@@ -3,16 +3,17 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
 body {
     background-image: linear-gradient(#d088ff, #55037d);
-    height: 150vh;
+    min-height: 100vh;
+    height: 100vh;
     position: relative;
-  }
+}
 
-body::before {
+  body::before {
     content: "";
     position: absolute;
     top: 0;
@@ -20,11 +21,11 @@ body::before {
     width: 100%;
     height: 100%;
     background: url('https://th.bing.com/th/id/R.979e69aa43b646c1102d1cff25470cfb?rik=Y%2frOQS4ZdfE1GQ&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f6%2f5%2f5%2f751756-vertical-hd-texture-backgrounds-2560x1440.jpg&ehk=EmpSac9I0upOJctvq6wAlV5zCWV1XMWRcIWgLHYchRA%3d&risl=&pid=ImgRaw&r=0') no-repeat;
-    opacity:.30;
     background-size: cover;
     background-position: center;
+    opacity: 0.30;
     z-index: -1;
-  }
+}
 
 header {
     background-color: #4e0079;
@@ -32,10 +33,16 @@ header {
     height: auto;
 }
 
-h1, b {
+h1 {
     font-family: "Protest Riot", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+p {
+    text-align: justify;
+    hyphens: auto;
+    word-spacing: 0.2em;
 }
 
 .nav-bar {
@@ -101,13 +108,17 @@ h1, b {
 }
 
 .text-principal p {
-    font-size: 1.5rem;
+    font-size: 15px;
     margin: auto;
     margin-left: 50px;
     width: 100%;
-    }
+}
+
 .text-principal b {
-    color: #370061;;
+    color: #370061;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .img-principal img {
@@ -115,6 +126,7 @@ h1, b {
     max-width: 300px;
     border-radius: 50%;
     box-shadow: 0px 0px 40px #4e0079;
+    margin-top: 20px;
 }
 
 .redes i {
@@ -123,7 +135,7 @@ h1, b {
     margin-right: 20px;
     margin-bottom: 20px;
     padding-left: 0;
-    font-size: 3rem;
+    font-size: 2rem;
     color:#1b0030;
 }
 
@@ -135,11 +147,11 @@ h1, b {
     margin-top: 50px;
     text-align: center;
     align-items: right;
-    font-size: 18px;
+    font-size: 15px;
     justify-content: right;
 }
 
-.curriculo-info {
+.curriculo-info h1 {
     color: #370061;
 }
 
@@ -148,21 +160,21 @@ h1, b {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     margin-top: 30px;
-    font-size: 18px;
+    font-size: 15px;
     margin: 30px auto;
     column-gap: 1px; 
-    width: 60%;
+    width: 70%;
 }
 
 .grid::after {
     content: "";
     background-size: cover;
     position: absolute;
-    top: 350px;
+    top: 330px;
     bottom: 0;
     left: 50%;
     width: 1px;
-    height: 445px;
+    height: 370px;
     border-radius:5px;
 	border: hidden;
     background-color: #1b0030;
@@ -216,8 +228,9 @@ ul {
 }
 
 .calculadora img {
-    width: 500px;
-    margin-top: 20px;
+    width: 300px;
+
+    border-radius: 7px;
 }
 
 .calculadora h1 {
@@ -225,17 +238,17 @@ ul {
 }
 
 .calculadora p {
-    font-size: 20px;
+    font-size: 15px;
     width: 67%;
     align-items: center;
     justify-content: center;
-    margin: 20px auto;
+    margin: 30px auto;
 }
 
 .calculadora a {
     font-size: 23px;
     color: #dfb2ff;
-    background-color: #370061;
+    background-color: #5a1c8a;;
     margin-top: 30px;
     padding: 10px 20px;
     border-radius: 5px;
@@ -247,7 +260,7 @@ ul {
 }
 
 .calculadora a:hover {
-    background-color: #ab37f8;
+    background-color:#8600c9;
 }
 
 .contatos {
@@ -257,7 +270,7 @@ ul {
 
 .contatos i {
     font-size: 10rem;
-    color: #1b0030;
+    color: #370061;
 }
 
 .contatos h1 {
@@ -275,8 +288,8 @@ ul {
 
 .contato i {
     display: inline-block;
-    margin: 5px;
-    font-size: 3rem;
+    margin: 3px;
+    font-size: 2.5rem;
     color:#1b0030;
 }
 
@@ -305,35 +318,33 @@ ul {
 
     .principal {
         height: auto;
-        margin: 100px auto;
+        margin: 50px auto;
     }
+
     .principal div{
         width: 80%;
 
     }
 
     .text-principal p{
-        font-size: 1.2rem;
         margin: auto;
         margin-top: 30px;
         width: auto;
-    }
-    
-    .text-principal b {
-        font-weight: bold;
     }
 
     .img-principal {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-right: 20px;
+    }
 
+    .img-principal img {
+        width: 70%;
     }
 
     .redes i {
-        margin: 5px;
-        margin-top: 30px;
+        margin: 3px;
+        margin-top: 20px;
     }
 
     .redes d {
@@ -355,6 +366,10 @@ ul {
     .grid::after {
         display: block;
         width: 0px;
+    }
+
+    .contatos p {
+        width: 80%;
     }
 
     .mobile-menu-icon button {
@@ -385,3 +400,9 @@ ul {
     }
     
 }
+
+@media (orientation: landscape) {
+    body {
+        height: 300vh;
+    }
+  }
