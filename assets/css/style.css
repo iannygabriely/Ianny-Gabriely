@@ -180,7 +180,7 @@ h1, b {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     margin: auto 50px;
-    margin-top: 30x;
+    margin-top: 30px;
 }
 
 .coluna4 {
@@ -278,6 +278,7 @@ ul {
     display: none;
 }
 
+
 @media screen and (max-width: 730px) {
     body {
         background-image: linear-gradient(#d18ffd, #d18ffd, #ab37f8, rgb(170, 22, 255));
@@ -297,7 +298,6 @@ ul {
         height: auto;
         margin: 100px auto;
     }
-	
     .principal div{
         width: 80%;
 
@@ -339,7 +339,6 @@ ul {
     .calculadora img {
         width: 80%;
     }
-	
     .mobile-menu-icon {
         display: block;
     }
@@ -367,7 +366,6 @@ ul {
     .mobile-menu {
         border-top: solid #3f005e 1px;
     }
-	
     .mobile-menu .nav-item {
         display: block;
         padding-top: 1.2rem;
@@ -375,5 +373,6 @@ ul {
 
     .open {
         display: block;
-    }   
+    }
+    
 }
